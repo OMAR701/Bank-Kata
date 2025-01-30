@@ -5,11 +5,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TransactionRepository {
-
     private final List<Transaction> transactions = new ArrayList<>();
 
+    public void addTransaction(int amount, LocalDate date) {
+        transactions.add(new Transaction(date, amount));
+    }
+
     public void addTransaction(int amount) {
-        transactions.add(new Transaction(LocalDate.now(), amount));
+        addTransaction(amount, LocalDate.now());
     }
 
     public List<Transaction> getAllTransactions() {

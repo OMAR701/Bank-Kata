@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="393dead9-93e1-47c2-a0f0-700e4e36bc77" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/omar/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/omar/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/omar/domain/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/omar/domain/TransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/omar/infrastructure/StatementPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/omar/infrastructure/StatementPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bank/domain/TransactionRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bank/domain/TransactionRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +27,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2sMVhoEn2JM4zJUYfgFf8igwp6V" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -33,8 +38,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.AccountTest.shouldPrintStatementContainingAllTransactions.executor": "Run",
     "Maven.BankKata [clean].executor": "Run",
     "Maven.BankKata [install].executor": "Run",
+    "Maven.BankKata [test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -46,6 +53,29 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="AccountTest.shouldPrintStatementContainingAllTransactions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BankKata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bank.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bank.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.bank.domain.AccountTest" />
+      <option name="METHOD_NAME" value="shouldPrintStatementContainingAllTransactions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AccountTest.shouldPrintStatementContainingAllTransactions" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -63,6 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1738265557817</updated>
       <workItem from="1738265560700" duration="892000" />
+      <workItem from="1738266470745" duration="2201000" />
     </task>
     <servers />
   </component>

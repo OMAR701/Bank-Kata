@@ -1,11 +1,10 @@
 package com.omar.infrastructure;
 
 import com.omar.domain.Transaction;
-
 import java.util.List;
+import java.util.Collections;
 
 public class StatementPrinter {
-
     private final Console console;
     private static final String HEADER = "DATE | AMOUNT | BALANCE";
 
@@ -15,6 +14,9 @@ public class StatementPrinter {
 
     public void print(List<Transaction> transactions) {
         console.printLine(HEADER);
+
+        transactions.sort((t1, t2) -> t1.getDate().compareTo(t2.getDate()));
+
         int balance = 0;
         for (Transaction transaction : transactions) {
             balance += transaction.getAmount();
