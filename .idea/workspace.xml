@@ -6,11 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="393dead9-93e1-47c2-a0f0-700e4e36bc77" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/omar/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/omar/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/omar/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/omar/domain/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/omar/domain/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/omar/domain/TransactionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/omar/infrastructure/StatementPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/omar/infrastructure/StatementPrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/bank/domain/TransactionRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bank/domain/TransactionRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bank/domain/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bank/domain/AccountTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -93,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1738265557817</updated>
       <workItem from="1738265560700" duration="892000" />
-      <workItem from="1738266470745" duration="2201000" />
+      <workItem from="1738266470745" duration="3237000" />
     </task>
     <servers />
   </component>

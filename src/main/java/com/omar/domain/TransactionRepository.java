@@ -4,18 +4,21 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TransactionRepository {
+public class TransactionRepository implements ITransactionRepository {
     private final List<Transaction> transactions = new ArrayList<>();
 
+    @Override
+    public void addTransaction(int amount) {
+        transactions.add(new Transaction(LocalDate.now(), amount));
+    }
+
+    @Override
     public void addTransaction(int amount, LocalDate date) {
         transactions.add(new Transaction(date, amount));
     }
 
-    public void addTransaction(int amount) {
-        addTransaction(amount, LocalDate.now());
-    }
-
+    @Override
     public List<Transaction> getAllTransactions() {
-        return transactions;
+        return new ArrayList<>(transactions);
     }
 }

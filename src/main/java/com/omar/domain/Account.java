@@ -1,17 +1,15 @@
 package com.omar.domain;
 
-import com.omar.infrastructure.StatementPrinter;
-
+import com.omar.infrastructure.IPrinter;
 import java.util.List;
 
 public class Account {
+    private final ITransactionRepository transactionRepository;
+    private final IPrinter printer;
 
-    private final TransactionRepository transactionRepository;
-    private final StatementPrinter statementPrinter;
-
-    public Account(TransactionRepository transactionRepository, StatementPrinter statementPrinter) {
+    public Account(ITransactionRepository transactionRepository, IPrinter printer) {
         this.transactionRepository = transactionRepository;
-        this.statementPrinter = statementPrinter;
+        this.printer = printer;
     }
 
     public void deposit(int amount) {
@@ -24,6 +22,6 @@ public class Account {
 
     public void printStatement() {
         List<Transaction> transactions = transactionRepository.getAllTransactions();
-        statementPrinter.print(transactions);
+        printer.print(transactions);
     }
 }

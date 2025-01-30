@@ -4,7 +4,7 @@ import com.omar.domain.Transaction;
 import java.util.List;
 import java.util.Collections;
 
-public class StatementPrinter {
+public class StatementPrinter implements IPrinter {
     private final Console console;
     private static final String HEADER = "DATE | AMOUNT | BALANCE";
 
@@ -12,6 +12,7 @@ public class StatementPrinter {
         this.console = console;
     }
 
+    @Override
     public void print(List<Transaction> transactions) {
         console.printLine(HEADER);
 
@@ -22,6 +23,8 @@ public class StatementPrinter {
             balance += transaction.getAmount();
             console.printLine(format(transaction, balance));
         }
+
+        console.printLine("Total transactions processed: " + transactions.size());
     }
 
     private String format(Transaction transaction, int balance) {
