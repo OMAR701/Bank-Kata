@@ -1,5 +1,8 @@
 package com.bank.domain;
 
+import com.omar.domain.Account;
+import com.omar.domain.TransactionRepository;
+import com.omar.infrastructure.StatementPrinter;
 import org.junit.jupiter.api.Test;
 import static org.mockito.Mockito.*;
 

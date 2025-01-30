@@ -1,5 +1,7 @@
 package com.omar.domain;
 
+import com.omar.infrastructure.StatementPrinter;
+
 import java.util.List;
 
 public class Account {
