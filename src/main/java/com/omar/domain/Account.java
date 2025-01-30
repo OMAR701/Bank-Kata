@@ -1,5 +1,7 @@
 package com.omar.domain;
 
+import java.util.List;
+
 public class Account {
 
     private final TransactionRepository transactionRepository;
